@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  tidtabell:
+    image: ${DOCKER_REGISTRY-}tidtabell
+    build:
+      context: .\Tidtabell
+      dockerfile: Dockerfile
